@@ -26,21 +26,115 @@ public class Guia2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel3 = new javax.swing.JPanel();
+        opRojo2 = new javax.swing.JRadioButton();
+        opVerde2 = new javax.swing.JRadioButton();
+        opAzul2 = new javax.swing.JRadioButton();
+        Bt_Aceptar2 = new javax.swing.JButton();
+        JL_Resultado2 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Colores", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12), new java.awt.Color(0, 70, 213))); // NOI18N
+
+        opRojo2.setText("Rojo");
+        opRojo2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opRojo2ActionPerformed(evt);
+            }
+        });
+
+        opVerde2.setText("Verde");
+        opVerde2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opVerde2ActionPerformed(evt);
+            }
+        });
+
+        opAzul2.setText("Azul");
+        opAzul2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opAzul2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(opRojo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(opVerde2, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
+                    .addComponent(opAzul2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(107, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(opRojo2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(opVerde2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(opAzul2)
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+
+        Bt_Aceptar2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Bt_Aceptar2.setText("Acepto");
+        Bt_Aceptar2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Bt_Aceptar2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Bt_Aceptar2ActionPerformed(evt);
+            }
+        });
+
+        JL_Resultado2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(JL_Resultado2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Bt_Aceptar2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(164, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(19, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addComponent(Bt_Aceptar2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
+                .addComponent(JL_Resultado2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void opRojo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opRojo2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_opRojo2ActionPerformed
+
+    private void opVerde2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opVerde2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_opVerde2ActionPerformed
+
+    private void opAzul2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opAzul2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_opAzul2ActionPerformed
+
+    private void Bt_Aceptar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Bt_Aceptar2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Bt_Aceptar2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +173,11 @@ public class Guia2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Bt_Aceptar2;
+    private javax.swing.JLabel JL_Resultado2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JRadioButton opAzul2;
+    private javax.swing.JRadioButton opRojo2;
+    private javax.swing.JRadioButton opVerde2;
     // End of variables declaration//GEN-END:variables
 }
