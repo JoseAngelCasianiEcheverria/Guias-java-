@@ -41,9 +41,9 @@ public class Guia12 extends javax.swing.JFrame {
         barraHerramientas.setRollover(true);
 
         btnUno.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnUno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Save_37110 (4).png"))); // NOI18N
         btnUno.setText("Uno");
         btnUno.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        btnUno.setFocusable(false);
         btnUno.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnUno.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnUno.addActionListener(new java.awt.event.ActionListener() {
@@ -51,31 +51,32 @@ public class Guia12 extends javax.swing.JFrame {
                 btnUnoActionPerformed(evt);
             }
         });
-        barraHerramientas.add(btnUno);
 
         btnDos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnDos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/32officeicons-3_89720 (2).png"))); // NOI18N
         btnDos.setText("Dos");
         btnDos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        btnDos.setFocusable(false);
         btnDos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnDos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        barraHerramientas.add(btnDos);
 
         btnTres.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnTres.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/refresh-page-option_icon-icons.com_73441 (2).png"))); // NOI18N
         btnTres.setText("Tres");
         btnTres.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        btnTres.setFocusable(false);
         btnTres.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnTres.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        barraHerramientas.add(btnTres);
+        btnTres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTresActionPerformed(evt);
+            }
+        });
 
         btnCuatro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnCuatro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/settings_gear_options_option_icon-icons.com_59985 (2).png"))); // NOI18N
         btnCuatro.setText("Cuatro");
         btnCuatro.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        btnCuatro.setFocusable(false);
         btnCuatro.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCuatro.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        barraHerramientas.add(btnCuatro);
 
         Menu.setText("Menu");
         Menu.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -89,14 +90,27 @@ public class Guia12 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(barraHerramientas, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE)
+                .addComponent(btnUno, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnDos, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnTres, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnCuatro)
+                .addGap(338, 338, 338)
+                .addComponent(barraHerramientas, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(barraHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 235, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(barraHerramientas, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnUno, javax.swing.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
+                    .addComponent(btnDos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnTres, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCuatro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 181, Short.MAX_VALUE))
         );
 
         pack();
@@ -105,6 +119,10 @@ public class Guia12 extends javax.swing.JFrame {
     private void btnUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnoActionPerformed
         JOptionPane.showMessageDialog(null,"Activaste el botón uno");
     }//GEN-LAST:event_btnUnoActionPerformed
+
+    private void btnTresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnTresActionPerformed
 
     /**
      * @param args the command line arguments

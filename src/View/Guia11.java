@@ -28,6 +28,7 @@ public class Guia11 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenu1 = new javax.swing.JMenu();
         barraMenus = new javax.swing.JMenuBar();
         menuArchivo = new javax.swing.JMenu();
         menuItemAbrir = new javax.swing.JMenuItem();
@@ -40,6 +41,8 @@ public class Guia11 extends javax.swing.JFrame {
         menuItemVerde = new javax.swing.JMenuItem();
         menuItemAzul = new javax.swing.JMenuItem();
         menuInsertar = new javax.swing.JMenu();
+
+        jMenu1.setText("jMenu1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -159,6 +162,7 @@ public class Guia11 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar barraMenus;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JMenu menuArchivo;
     private javax.swing.JMenu menuColores;
