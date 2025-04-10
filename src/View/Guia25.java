@@ -4,11 +4,16 @@
  */
 package View;
 
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Gercray
  */
 public class Guia25 extends javax.swing.JFrame {
+    JButton btnContar;
 
     /**
      * Creates new form Guia25
@@ -16,6 +21,7 @@ public class Guia25 extends javax.swing.JFrame {
     public Guia25() {
         initComponents();
     }
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -26,21 +32,199 @@ public class Guia25 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        checkBox1 = new javax.swing.JCheckBox();
+        checkBox2 = new javax.swing.JCheckBox();
+        checkBox3 = new javax.swing.JCheckBox();
+        checkBox4 = new javax.swing.JCheckBox();
+        checkBox5 = new javax.swing.JCheckBox();
+        checkBox6 = new javax.swing.JCheckBox();
+        checkBox7 = new javax.swing.JCheckBox();
+        checkBox8 = new javax.swing.JCheckBox();
+        checkBox10 = new javax.swing.JCheckBox();
+        checkBox9 = new javax.swing.JCheckBox();
+        jButton1 = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setText("Ejemplo de vector de componentes");
+
+        checkBox1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        checkBox1.setText("Rojo");
+
+        checkBox2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        checkBox2.setText("Verde");
+        checkBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkBox2ActionPerformed(evt);
+            }
+        });
+
+        checkBox3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        checkBox3.setText("Azul");
+
+        checkBox4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        checkBox4.setText("Rosa");
+        checkBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkBox4ActionPerformed(evt);
+            }
+        });
+
+        checkBox5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        checkBox5.setText("Celeste");
+
+        checkBox6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        checkBox6.setText("Morado");
+        checkBox6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkBox6ActionPerformed(evt);
+            }
+        });
+
+        checkBox7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        checkBox7.setText("Amarillo");
+
+        checkBox8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        checkBox8.setText("Marrón");
+        checkBox8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkBox8ActionPerformed(evt);
+            }
+        });
+
+        checkBox10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        checkBox10.setText("Blanco");
+        checkBox10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkBox10ActionPerformed(evt);
+            }
+        });
+
+        checkBox9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        checkBox9.setText("Naranja");
+
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton1.setText("Aceptar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checkBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checkBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checkBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checkBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checkBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checkBox6, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checkBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checkBox8, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checkBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(checkBox10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)))
+                .addContainerGap(81, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(checkBox1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(checkBox2)
+                .addGap(18, 18, 18)
+                .addComponent(checkBox3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(checkBox4)
+                .addGap(18, 18, 18)
+                .addComponent(checkBox5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(checkBox6)
+                .addGap(18, 18, 18)
+                .addComponent(checkBox7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(checkBox8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(checkBox9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(checkBox10)
+                .addGap(27, 27, 27)
+                .addComponent(jButton1)
+                .addContainerGap(78, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void checkBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_checkBox2ActionPerformed
+
+    private void checkBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkBox4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_checkBox4ActionPerformed
+
+    private void checkBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkBox6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_checkBox6ActionPerformed
+
+    private void checkBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkBox8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_checkBox8ActionPerformed
+
+    private void checkBox10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkBox10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_checkBox10ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+        int cont = 0;
+       
+        if (checkBox1.isSelected()) {
+            cont++;
+        }
+        if (checkBox2.isSelected()) {
+            cont++;
+        }
+        if (checkBox3.isSelected()) {
+            cont++;
+        }
+        if (checkBox4.isSelected()) {
+            cont++;
+        }
+        if (checkBox5.isSelected()) {
+            cont++;
+        }
+        if (checkBox6.isSelected()) {
+            cont++;
+        }
+        if (checkBox7.isSelected()) {
+            cont++;
+        }
+        if (checkBox8.isSelected()) {
+            cont++;
+        }
+        if (checkBox9.isSelected()) {
+            cont++;
+        }
+        if (checkBox10.isSelected()) {
+            cont++;
+        }
+        
+       JOptionPane.showMessageDialog(null, "Hay " + cont + " cuadros seleccionados");
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +262,17 @@ public class Guia25 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox checkBox1;
+    private javax.swing.JCheckBox checkBox10;
+    private javax.swing.JCheckBox checkBox2;
+    private javax.swing.JCheckBox checkBox3;
+    private javax.swing.JCheckBox checkBox4;
+    private javax.swing.JCheckBox checkBox5;
+    private javax.swing.JCheckBox checkBox6;
+    private javax.swing.JCheckBox checkBox7;
+    private javax.swing.JCheckBox checkBox8;
+    private javax.swing.JCheckBox checkBox9;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
