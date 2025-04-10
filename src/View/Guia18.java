@@ -27,26 +27,22 @@ public class Guia18 extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jLabel1 = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        jlImagen = new javax.swing.JLabel();
+        Menus = new javax.swing.JMenuBar();
+        POO = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/1_2QTNUKQl2YFaXGq-l6i4nA.jpg"))); // NOI18N
-        jScrollPane1.setViewportView(jLabel1);
+        jlImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/1_2QTNUKQl2YFaXGq-l6i4nA.jpg"))); // NOI18N
+        jScrollPane1.setViewportView(jlImagen);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 280));
 
-        jMenu1.setText("POO");
-        jMenuBar1.add(jMenu1);
+        POO.setText("POO");
+        Menus.add(POO);
 
-        jMenu2.setText("Calculo Vectorial");
-        jMenuBar1.add(jMenu2);
-
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(Menus);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -87,10 +83,9 @@ public class Guia18 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar Menus;
+    private javax.swing.JMenu POO;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel jlImagen;
     // End of variables declaration//GEN-END:variables
 }
