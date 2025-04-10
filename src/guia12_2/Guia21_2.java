@@ -1,7 +1,6 @@
 package guia12_2;
 
 import javax.swing.*;
-import guia12_2.ClasePrincipal;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
